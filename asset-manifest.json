@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/yandex-dictionary/static/css/main.e0b51fe9.chunk.css",
+    "main.js": "/yandex-dictionary/static/js/main.34776c0a.chunk.js",
+    "main.js.map": "/yandex-dictionary/static/js/main.34776c0a.chunk.js.map",
+    "runtime-main.js": "/yandex-dictionary/static/js/runtime-main.3f8b81f7.js",
+    "runtime-main.js.map": "/yandex-dictionary/static/js/runtime-main.3f8b81f7.js.map",
+    "static/js/2.52ffe968.chunk.js": "/yandex-dictionary/static/js/2.52ffe968.chunk.js",
+    "static/js/2.52ffe968.chunk.js.map": "/yandex-dictionary/static/js/2.52ffe968.chunk.js.map",
+    "static/js/3.c821ef62.chunk.js": "/yandex-dictionary/static/js/3.c821ef62.chunk.js",
+    "static/js/3.c821ef62.chunk.js.map": "/yandex-dictionary/static/js/3.c821ef62.chunk.js.map",
+    "index.html": "/yandex-dictionary/index.html",
+    "static/css/main.e0b51fe9.chunk.css.map": "/yandex-dictionary/static/css/main.e0b51fe9.chunk.css.map",
+    "static/js/2.52ffe968.chunk.js.LICENSE.txt": "/yandex-dictionary/static/js/2.52ffe968.chunk.js.LICENSE.txt",
+    "static/media/arrow-right-solid.2db90993.svg": "/yandex-dictionary/static/media/arrow-right-solid.2db90993.svg",
+    "static/media/logo.6ce24c58.svg": "/yandex-dictionary/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f8b81f7.js",
+    "static/js/2.52ffe968.chunk.js",
+    "static/css/main.e0b51fe9.chunk.css",
+    "static/js/main.34776c0a.chunk.js"
+  ]
+}
