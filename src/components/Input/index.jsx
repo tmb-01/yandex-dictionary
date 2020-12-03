@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {Button, InputBox, Select, Textarea, TrFromToBox} from "./styles";
+import {Button, Cite, InputBox, Select, Textarea, TrFromToBox} from "./styles";
 import {ReactComponent as ArrowRight} from "../../assets/icons/arrow-right-solid.svg"
 
 function Input({getTranslatedWords}) {
@@ -17,7 +17,7 @@ function Input({getTranslatedWords}) {
     ]
 
 
-    const langToStr=(lang)=>{
+    const langToStr = (lang) => {
         switch (lang) {
             case "ru":
                 return "Russian"
@@ -41,46 +41,46 @@ function Input({getTranslatedWords}) {
                 return ''
 
         }
-
     }
 
-    const langsText=(langs,number)=>{
+    const langsText = (langs, number) => {
         const lang = langs.split("-")
         return langToStr(lang[number])
     }
 
-    const [chosenLang,setChosenLang]=useState("en-ru")
+    const [chosenLang, setChosenLang] = useState("en-ru")
 
     return (
         <>
-        <InputBox>
-            <TrFromToBox>
-                <Select value={chosenLang} onChange={(e)=>setChosenLang(e.target.value)}>
+            <InputBox>
+                <TrFromToBox>
+                    <Select value={chosenLang} onChange={(e) => setChosenLang(e.target.value)}>
 
-                    {
-                        langs.map(
-                            (lang)=> <option value={lang}>{langsText(lang,0)} &#10142; {langsText(lang,1)} </option>
-                        )
-                    }
+                        {
+                            langs.map(
+                                (lang) => <option
+                                    value={lang}>{langsText(lang, 0)} &#10142; {langsText(lang, 1)} </option>
+                            )
+                        }
 
-                </Select>
-                {/*<ArrowRight/>*/}
-            </TrFromToBox>
-            <Textarea rows={4}
-                      placeholder={"Type something to translate"}
-                      value={inputText}
-                      onChange={(e) => {
-                          getTranslatedWords(chosenLang, e.target.value.split(" ").join("+"))
-                          setInputText(e.target.value)
-                          console.log(e.target.value.split(" ").join("+"))
-                      }}
-            />
-            {/*<Button onClick={() => getTranslatedWords(inputText)}>*/}
-            {/*    Translate*/}
-            {/*</Button>*/}
+                    </Select>
+                    {/*<ArrowRight/>*/}
+                </TrFromToBox>
+                <Textarea rows={4}
+                          placeholder={"Type something to translate"}
+                          value={inputText}
+                          onChange={(e) => {
+                              getTranslatedWords(chosenLang, e.target.value.split(" ").join("+"))
+                              setInputText(e.target.value)
+                              console.log(e.target.value.split(" ").join("+"))
+                          }}
+                />
+                {/*<Button onClick={() => getTranslatedWords(inputText)}>*/}
+                {/*    Translate*/}
+                {/*</Button>*/}
 
-        </InputBox>
-            <p>Powered by <a href="https://yandex.com/dev/dictionary/">Yandex</a></p>
+            </InputBox>
+            <Cite>Powered by <a href="https://yandex.com/dev/dictionary/">Yandex</a></Cite>
         </>
     )
 }

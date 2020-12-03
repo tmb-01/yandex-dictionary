@@ -22,6 +22,9 @@ margin: 0 10px;
 export const Select = styled.select`
 padding: 5px;
 
+&:focus{
+outline: 0;
+}
 `;
 
 export const Textarea = styled.textarea`
@@ -37,6 +40,21 @@ font-size: 20px;
 &:focus{
 outline: 0;
 }
+
+@media only screen and (max-width: 768px){
+font-size: 18px;
+&::placeholder{
+font-size: 18px;
+}
+
+@media only screen and (max-width: 425px){
+font-size: 15px;
+&::placeholder{
+font-size: 15px;
+}
+
+}
+
 `;
 
 export const Button=styled.button`
@@ -49,4 +67,8 @@ outline: 0;
 &:active{
 opacity: 0.7;
 }
+`;
+
+export const Cite=styled.p`
+margin-bottom: 30px;
 `;
