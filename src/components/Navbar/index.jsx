@@ -6,7 +6,7 @@ function Navbar() {
         <NavbarWrapper>
             <NavbarContainer>
                 <Logo>
-                    <span>Yandex</span> translate
+                    <span>Yandex</span> dictionary
                 </Logo>
             </NavbarContainer>
 

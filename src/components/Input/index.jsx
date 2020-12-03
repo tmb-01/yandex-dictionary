@@ -52,6 +52,7 @@ function Input({getTranslatedWords}) {
     const [chosenLang,setChosenLang]=useState("en-ru")
 
     return (
+        <>
         <InputBox>
             <TrFromToBox>
                 <Select value={chosenLang} onChange={(e)=>setChosenLang(e.target.value)}>
@@ -79,6 +80,8 @@ function Input({getTranslatedWords}) {
             {/*</Button>*/}
 
         </InputBox>
+            <p>Powered by <a href="https://yandex.com/dev/dictionary/">Yandex</a></p>
+        </>
     )
 }
 
